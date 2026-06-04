@@ -1734,8 +1734,12 @@ class MainWindow(QMainWindow):
         collapsed = bool(getattr(self, "_log_panel_collapsed", False))
         if hasattr(self, "log_text"):
             self.log_text.setVisible(not collapsed)
+        always_visible = (getattr(self, "log_workbench_btn", None), getattr(self, "log_open_btn", None))
         for widget in getattr(self, "log_compact_only_widgets", []) or []:
-            widget.setVisible(collapsed or widget in {getattr(self, "log_workbench_btn", None), getattr(self, "log_open_btn", None)})
+            if any(widget is item for item in always_visible):
+                widget.setVisible(True)
+            else:
+                widget.setVisible(collapsed)
         for widget in getattr(self, "log_expanded_only_widgets", []) or []:
             widget.setVisible(not collapsed)
         if hasattr(self, "log_toggle_btn"):
@@ -7288,8 +7292,6 @@ class MainWindow(QMainWindow):
         }:
             value = self.table.item(row, column).text() if self.table.item(row, column) else ""
             self.preview_value(value)
-        if task.logs:
-            self.log_text.append("\n".join(task.logs[-10:]))
 
     def update_detail_panel_for_task(self, task: TaskItem) -> None:
         if not hasattr(self, "preview_info_label"):
@@ -7309,6 +7311,11 @@ class MainWindow(QMainWindow):
         if task.error_message:
             lines.append(f"错误：{self._summary(task.error_message, 160)}")
         self.preview_info_label.setText("\n".join(lines))
+        if hasattr(self, "task_log_preview_text"):
+            log_text = task_logs_to_text(task).strip()
+            if not log_text:
+                log_text = "这条任务暂时还没有详细日志。"
+            self.task_log_preview_text.setPlainText(log_text)
 
     def on_cell_double_clicked(self, row: int, column: int) -> None:
         item = self.table.item(row, column)
