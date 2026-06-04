@@ -1,0 +1,9 @@
+streamlit>=1.56,<1.57
+requests>=2.32,<3
+tenacity>=9,<10
+pandas>=2.2,<3
+openpyxl>=3.1,<4
+oss2>=2.19,<3
+python-dotenv>=1.0,<2
+pyinstaller>=6.13,<7
+PySide6>=6.8,<7

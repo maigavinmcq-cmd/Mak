@@ -1,0 +1,28 @@
+Veo3 快速打包说明
+
+1. 首次准备
+双击运行：
+init_pack_env.bat
+
+作用：
+- 创建 .venv_pack 打包专用虚拟环境
+- 只安装 Veo3 打包所需的最小依赖
+
+2. 日常升级打包
+代码改完后，双击运行：
+quick_build_portable.bat
+
+输出目录：
+dist_pack\Veo3Portable
+
+主程序：
+dist_pack\Veo3Portable\Veo3Portable.exe
+
+3. 为什么这样会更快
+- 不再复用当前庞大的开发环境
+- 不再让 PyInstaller 扫描 torch / tensorflow / onnxruntime 等重库
+- spec 已针对 Veo3 做精简
+
+4. 注意事项
+- 打包前先关闭旧的 Veo3Portable.exe，否则输出目录可能被占用
+- 如果第一次安装依赖失败，通常是网络或 pip 源问题

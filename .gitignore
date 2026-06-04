@@ -1,0 +1,114 @@
+# Python caches and environments
+__pycache__/
+*.py[cod]
+*$py.class
+.python-version
+.venv/
+.venv_pack/
+venv/
+env/
+ENV/
+
+# Packaging and build outputs
+build/
+dist/
+*.egg-info/
+*.spec.bak
+
+# Local IDE and OS files
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Logs and runtime state
+*.log
+*.tmp
+*.temp
+logs/
+*/logs/
+.cache/
+.pytest_cache/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+config.local.*
+secrets.*
+*.enc
+*.salt
+.key_saved.marker
+cookies.txt
+cookies*.txt
+license.json
+
+# Generated outputs, downloads, models, and QA artifacts
+downloads/
+models/
+outputs/
+whisper_model/
+docx_qa/
+_tmp_excel_image_cache/
+.cdp_browser_profile/
+*/.cdp_browser_profile/
+ms-playwright/
+*/ms-playwright/
+node_modules/
+*/node_modules/
+user_config/
+*/user_config/
+state/
+*/state/
+task_history.json
+*/task_history.json
+task_history_store/
+*/task_history_store/
+tasks.json
+*/tasks.json
+tasks_store/
+*/tasks_store/
+*_import_tasks.json
+account_groups.json
+output_clash.yaml
+*_ui.json
+*_ui_state.json
+*_session.json
+debug*.html
+*/debug*.html
+
+# Local data exports and office documents
+*.xlsx
+*.xls
+*.xlsm
+*.csv
+*.tsv
+*.pptx
+~$*
+
+# Binary artifacts
+*.exe
+*.dll
+*.so
+*.dylib
+*.zip
+*.7z
+*.rar
+*.mp4
+*.mov
+*.avi
+
+# PyInstaller generated folders inside subprojects
+*/build/
+*/dist/
+
+# Miscellaneous local artifacts
+nul
+=*
+新建 文本文档.txt

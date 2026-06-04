@@ -1,0 +1,25 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1024" y2="1024" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#121212"/>
+    <stop offset="1" stop-color="#1E1E1E"/>
+  </linearGradient>
+  <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(525 276) rotate(103) scale(554)">
+    <stop stop-color="#007AFF" stop-opacity="0.55"/>
+    <stop offset="1" stop-color="#007AFF" stop-opacity="0"/>
+  </radialGradient>
+</defs>
+<rect width="1024" height="1024" rx="224" fill="url(#bg)"/>
+<rect width="1024" height="1024" rx="224" fill="url(#glow)"/>
+<rect x="88" y="88" width="848" height="848" rx="176" fill="white" fill-opacity="0.07" stroke="white" stroke-opacity="0.16" stroke-width="6"/>
+<circle cx="512" cy="482" r="290" stroke="#007AFF" stroke-opacity="0.86" stroke-width="36"/>
+<circle cx="382" cy="223" r="23" fill="#76B8FF" fill-opacity="0.82"/>
+<circle cx="548" cy="194" r="23" fill="#007AFF"/>
+<circle cx="703" cy="261" r="23" fill="#007AFF"/>
+<circle cx="786" cy="408" r="23" fill="#007AFF"/>
+<circle cx="765" cy="575" r="23" fill="#007AFF"/>
+<circle cx="650" cy="700" r="23" fill="#76B8FF" fill-opacity="0.82"/>
+<circle cx="484" cy="727" r="23" fill="#76B8FF" fill-opacity="0.82"/>
+<path d="M440 350V655L682 503L440 350Z" fill="#007AFF"/>
+<text x="512" y="820" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="184" font-weight="700" fill="#F5F8FF">V3</text>
+</svg>

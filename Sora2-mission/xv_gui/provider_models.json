@@ -1,0 +1,77 @@
+{
+  "providers": {
+    "xintian": {
+      "label": "XINTIAN(v1/videos 上传+轮询)",
+      "default_base": "https://api.xintianwengai.com",
+      "default_model": "sora-2-landscape-10s",
+      "models": [
+        "sora-2-landscape-10s",
+        "sora-2-portrait-10s",
+        "sora-2-landscape-15s",
+        "sora-2-portrait-15s",
+        "sora-2-pro-landscape-25s",
+        "sora-2-pro-portrait-25s",
+        "sora-2-pro-landscape-hd-10s",
+        "sora-2-pro-portrait-hd-10s",
+        "sora-2-pro-landscape-hd-15s",
+        "sora-2-pro-portrait-hd-15s"
+      ]
+    },
+    "lingke": {
+      "label": "LINGKE(v1/video/create + /v1/video/query)",
+      "default_base": "https://lingkeapi.com",
+      "default_model": "sora-2-portrait-15s",
+      "models": [
+        "sora-2-portrait-15s"
+      ]
+    },
+    "apiyi": {
+      "label": "APIYI(chat/completions 流式)",
+      "default_base": "https://api.apiyi.com/v1",
+      "default_model": "sora_video2-15s",
+      "models": [
+        "sora_video2-15s",
+        "sora-2-pro"
+      ]
+    },
+    "toapis": {
+      "label": "TOAPIS(upload+generations+poll)",
+      "default_base": "https://toapis.com",
+      "default_model": "sora-2-portrait-15s",
+      "models": [
+        "sora-2-portrait-15s",
+        "sora-2-portrait-10s",
+        "sora-2-landscape-15s",
+        "sora-2-landscape-10s"
+      ]
+    },
+    "baoyouhuyu": {
+      "label": "BAOYOUHUYU(v1/videos create+poll)",
+      "default_base": "https://api.baoyouhuyu.com",
+      "default_model": "sora-2-vip",
+      "models": [
+        "sora-2-vip"
+      ]
+    },
+    "jimmy": {
+      "label": "JIMMY(open-api videos create+poll)",
+      "default_base": "https://www.jimmyai.cn",
+      "default_model": "sora2Openai",
+      "models": [
+        "sora2Openai",
+        "sora2Standard",
+        "sora2",
+        "sora2Stable"
+      ]
+    },
+    "dyuapi": {
+      "label": "HELLOBABYGO(v1/videos 图生视频 create+poll)",
+      "default_base": "https://api.hellobabygo.com",
+      "default_model": "sora-2-portrait-15s",
+      "models": [
+        "sora-2-portrait-15s",
+        "sora-2-teshu"
+      ]
+    }
+  }
+}
